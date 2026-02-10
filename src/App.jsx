@@ -5,7 +5,7 @@ import './App.css';
 function Header(props) {
   return (
     <header className="header-container">
-      <h1>{props.FullName}</h1>
+      <h1>{props.Surname}</h1>
     </header>
   );
 }
@@ -22,13 +22,13 @@ function Box(props) {
 // PARENT 
 export default function App() {
   const info = {
-    FullName: "Aaron Laxamana",
+    Surname: "Laxamana",
     courseCode: "CPEITEL"
   };
 
   return (
     <div className="App">
-      <Header FullName={info.FullName} />
+      <Header Surname={info.Surname} />
       <Box subjectCode={info.courseCode} />
     </div>
   );
